@@ -1,3 +1,5 @@
+import json 
+
 import requests
 from bs4 import BeautifulSoup 
 
@@ -41,6 +43,6 @@ books = scrape(url)
 
 
 with open("book.json","w") as f:
-    import json 
+    
     json.dump(books,f)
         
